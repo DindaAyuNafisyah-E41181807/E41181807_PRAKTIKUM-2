@@ -52,4 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+/*router ditambahkan untuk controller Overview 
+maka dengan membuka http://localhost/(nama folder CI kita)/index.php/admin/, 
+view overview akan terlihat di browser*/
 $route['admin'] = 'admin/overview';

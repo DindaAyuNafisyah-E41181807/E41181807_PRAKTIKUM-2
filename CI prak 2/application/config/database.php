@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+/*untuk menghubungkan database kita harus membuat database terlebih dahulu kemudian kita konfigurasikan database kita di config database untuikmenghubngkannya dengan CI*/
 /*
 | -------------------------------------------------------------------
 | DATABASE CONNECTIVITY SETTINGS
@@ -76,9 +76,9 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
+	'username' => 'root',//masukkan username sesuai database kita
 	'password' => '',
-	'database' => 'malasngoding',
+	'database' => 'malasngoding',//masukkan mnama database kita
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -94,3 +94,6 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+/*Setelah melakukan pengaturan database, kita harus memanggil libary database codeigniter.
+karena untuk pengguanaan database kita harus 
+mengaktifkan libary milik codeigniter.Selanjutnya kita masukkan liraries di autoload.php */

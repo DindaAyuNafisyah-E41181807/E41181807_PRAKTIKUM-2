@@ -5,8 +5,8 @@
 </head>
 <body>
 	<h1>Membuat Form Validation dengan CodeIgniter</h1>
-	<?php echo validation_errors(); ?>
-	<?php echo form_open('form/aksi'); ?>
+	<?php echo validation_errors(); //ini merupakan syntax untuk menmpilkan peringatan validasi?>
+	<?php echo form_open('form/aksi');// syntax ini yang akan mentepkan aksi validation dari controller ?>
 		<label>Nama</label><br/>
 		<input type="text" name="nama"><br/>
 		<label>Email</label><br/>

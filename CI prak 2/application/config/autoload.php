@@ -1,6 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+// Kedua kita harus melakukan konfigurasipada Autoload.
+// Kita harus meload sebuah helper ke memori secara otomatis melalui autoload.php.
+
+
+
 /*
 | -------------------------------------------------------------------
 | AUTO-LOADER
@@ -58,6 +63,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
+/**masukkan liberiesuntuk menghubungkan database */
 $autoload['libraries'] = array('database');
 
 /*
@@ -89,6 +95,15 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
+
+/*Helper adalah fungsi-fungsi Codeigniter yang akan membantu kita dalam berbagai hal, 
+seperti: membuat form, mengakses URL, dll.
+Salah satu helper yang kita butuhkan dalam pembuatan template adalah helper url.
+Helper url berisi fungsi-fungsi untuk mengakses URL seperti base_url(), site_url(), $this->uri, dll*/
+
+//kita bisa memasukkan helper yang akan kita gunakan di dalam array()
+//cara kedua memanggil helper selain melalui controller adalah dengan memasukkan helper ke dalam config autoload
+//untuk membuat file downloadkita hanya perlu memanggil helper download yang sudah disediakan oleh codeigniter
 $autoload['helper'] = array('url','html','download');
 
 /*

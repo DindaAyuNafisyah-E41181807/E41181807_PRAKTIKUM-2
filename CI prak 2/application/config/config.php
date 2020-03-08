@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-/**/ 
+//melakukan Konfigurasi Awal Codeigniter
 
 /*
 |--------------------------------------------------------------------------
@@ -26,8 +26,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 
-/**/ 
-$config['base_url'] = 'http://localhost/helloword/';
+/*Pertama melakukan config pada base url,Base URL berfungsi untuk menentukan alamat atau 
+URL yang akan digunakan oleh web. isi bagian $config['base_url'] = '(dengan nama file ci kita)';
+*/ 
+$config['base_url'] = 'http://localhost/CI prak 2/';
 
 /*
 |--------------------------------------------------------------------------

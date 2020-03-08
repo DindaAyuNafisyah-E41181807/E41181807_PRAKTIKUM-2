@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+//Kemudian membuat konstan
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace
@@ -91,4 +91,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 |
 */
 
-define('SITE_NAME', 'HelloWord');
+/*buat konstanta SITE_NAME bherisi nama projek CI kita untuk menyimpan nama web. 
+Konstanta ini nanti kita perlukan untuk mengambil judul web pada template.*/
+
+define('SITE_NAME', 'CI prak 2');
